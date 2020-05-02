@@ -117,41 +117,29 @@
     <Compile Include="ZaupShopConfiguration.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Libraries\BouncyCastle.Crypto.dll">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Libraries\Google.Protobuf.dll">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Libraries\I18N.dll">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Libraries\I18N.West.dll">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Libraries\MySql.Data.dll">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Libraries\Renci.SshNet.dll">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Libraries\System.Data.dll">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Libraries\System.Management.dll">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Libraries\System.Transactions.dll">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
     <Content Include="lib\Assembly-CSharp-firstpass.dll" />
     <Content Include="lib\Assembly-CSharp.dll" />
+    <Content Include="lib\BouncyCastle.Crypto.dll" />
+    <Content Include="lib\Google.Protobuf.dll" />
+    <Content Include="lib\I18N.dll" />
+    <Content Include="lib\I18N.West.dll" />
+    <Content Include="lib\K4os.Compression.LZ4.dll" />
+    <Content Include="lib\K4os.Compression.LZ4.Streams.dll" />
+    <Content Include="lib\K4os.Hash.xxHash.dll" />
+    <Content Include="lib\MySql.Data.dll" />
+    <Content Include="lib\Renci.SshNet.dll" />
     <Content Include="lib\Rocket.API.dll" />
     <Content Include="lib\Rocket.Core.dll" />
     <Content Include="lib\Rocket.Unturned.dll" />
+    <Content Include="lib\System.Data.dll" />
+    <Content Include="lib\System.Management.dll" />
+    <Content Include="lib\System.Net.Http.dll" />
+    <Content Include="lib\System.Transactions.dll" />
+    <Content Include="lib\Ubiety.Dns.Core.dll" />
     <Content Include="lib\Uconomy.dll" />
     <Content Include="lib\UnityEngine.CoreModule.dll" />
     <Content Include="lib\UnityEngine.dll" />
+    <Content Include="lib\Zstandard.Net.dll" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
