@@ -34,112 +34,88 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Assembly-CSharp">
-      <HintPath>lib\Assembly-CSharp.dll</HintPath>
+      <HintPath>..\..\Libraries\Unity\Assembly-CSharp.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Assembly-CSharp-firstpass">
-      <HintPath>lib\Assembly-CSharp-firstpass.dll</HintPath>
+      <HintPath>..\..\Libraries\Unity\Assembly-CSharp-firstpass.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="BouncyCastle.Crypto">
-      <HintPath>Libraries\BouncyCastle.Crypto.dll</HintPath>
+      <HintPath>..\..\Libraries\MySQL\BouncyCastle.Crypto.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Google.Protobuf">
-      <HintPath>Libraries\Google.Protobuf.dll</HintPath>
+      <HintPath>..\..\Libraries\MySQL\Google.Protobuf.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="I18N">
+      <HintPath>..\..\Libraries\MySQL\I18N.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="I18N.West">
-      <HintPath>Libraries\I18N.West.dll</HintPath>
+      <HintPath>..\..\Libraries\MySQL\I18N.West.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="MySql.Data">
-      <HintPath>Libraries\MySql.Data.dll</HintPath>
+      <HintPath>..\..\Libraries\MySQL\MySql.Data.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Renci.SshNet">
-      <HintPath>Libraries\Renci.SshNet.dll</HintPath>
+      <HintPath>..\..\Libraries\MySQL\Renci.SshNet.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Rocket.API">
-      <HintPath>lib\Rocket.API.dll</HintPath>
-      <Private>False</Private>
+      <HintPath>..\..\Libraries\Rocket\Rocket.API.dll</HintPath>
     </Reference>
     <Reference Include="Rocket.Core">
-      <HintPath>lib\Rocket.Core.dll</HintPath>
-      <Private>False</Private>
+      <HintPath>..\..\Libraries\Rocket\Rocket.Core.dll</HintPath>
     </Reference>
     <Reference Include="Rocket.Unturned">
-      <HintPath>lib\Rocket.Unturned.dll</HintPath>
-      <Private>False</Private>
+      <HintPath>..\..\Libraries\Rocket\Rocket.Unturned.dll</HintPath>
     </Reference>
     <Reference Include="System" />
-    <Reference Include="System.ComponentModel" />
-    <Reference Include="System.ComponentModel.DataAnnotations" />
-    <Reference Include="System.Configuration" />
-    <Reference Include="System.Configuration.Install" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.Drawing" />
-    <Reference Include="System.Drawing.Design" />
-    <Reference Include="System.Management">
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="System.Transactions">
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="System.Data">
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="System.Xml" />
-    <Reference Include="Uconomy">
-      <HintPath>lib\Uconomy.dll</HintPath>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="Uconomy, Version=1.0.4.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Libraries\Plugins\aLP2\Uconomy.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine">
-      <HintPath>lib\UnityEngine.dll</HintPath>
+      <HintPath>..\..\Libraries\Unity\UnityEngine.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.CoreModule">
-      <HintPath>lib\UnityEngine.CoreModule.dll</HintPath>
+      <HintPath>..\..\Libraries\Unity\UnityEngine.CoreModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CommandBuy.cs" />
-    <Compile Include="CommandCost.cs" />
-    <Compile Include="CommandSell.cs" />
-    <Compile Include="CommandShop.cs" />
+    <Compile Include="Commands\CommandAuction.cs" />
+    <Compile Include="Commands\CommandBuy.cs" />
+    <Compile Include="Commands\CommandCost.cs" />
+    <Compile Include="Commands\CommandPremiumAuction.cs" />
+    <Compile Include="Commands\CommandPremiumLimit.cs" />
+    <Compile Include="Commands\CommandLimit.cs" />
+    <Compile Include="Commands\CommandPremiumBuy.cs" />
+    <Compile Include="Commands\CommandPremiumCost.cs" />
+    <Compile Include="Commands\CommandPremiumSale.cs" />
+    <Compile Include="Commands\CommandPremiumSell.cs" />
+    <Compile Include="Commands\CommandPremiumSellVehicle.cs" />
+    <Compile Include="Commands\CommandPremiumShop.cs" />
+    <Compile Include="Commands\CommandSale.cs" />
+    <Compile Include="Commands\CommandSell.cs" />
+    <Compile Include="Commands\CommandSellVehicle.cs" />
+    <Compile Include="Commands\CommandShop.cs" />
     <Compile Include="DatabaseMgr.cs" />
+    <Compile Include="DatabaseMgrAuction.cs" />
+    <Compile Include="PremiumSales.cs" />
+    <Compile Include="Sales.cs" />
     <Compile Include="ZaupShop.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ZaupShopConfiguration.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="lib\Assembly-CSharp-firstpass.dll" />
-    <Content Include="lib\Assembly-CSharp.dll" />
-    <Content Include="lib\BouncyCastle.Crypto.dll" />
-    <Content Include="lib\Google.Protobuf.dll" />
-    <Content Include="lib\I18N.dll" />
-    <Content Include="lib\I18N.West.dll" />
-    <Content Include="lib\K4os.Compression.LZ4.dll" />
-    <Content Include="lib\K4os.Compression.LZ4.Streams.dll" />
-    <Content Include="lib\K4os.Hash.xxHash.dll" />
-    <Content Include="lib\MySql.Data.dll" />
-    <Content Include="lib\Renci.SshNet.dll" />
-    <Content Include="lib\Rocket.API.dll" />
-    <Content Include="lib\Rocket.Core.dll" />
-    <Content Include="lib\Rocket.Unturned.dll" />
-    <Content Include="lib\System.Data.dll" />
-    <Content Include="lib\System.Management.dll" />
-    <Content Include="lib\System.Net.Http.dll" />
-    <Content Include="lib\System.Transactions.dll" />
-    <Content Include="lib\Ubiety.Dns.Core.dll" />
-    <Content Include="lib\Uconomy.dll" />
-    <Content Include="lib\UnityEngine.CoreModule.dll" />
-    <Content Include="lib\UnityEngine.dll" />
-    <Content Include="lib\Zstandard.Net.dll" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

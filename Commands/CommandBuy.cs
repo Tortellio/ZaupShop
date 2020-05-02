@@ -21,7 +21,7 @@ namespace ZaupShop
 
         public void Execute(IRocketPlayer playerid, string[] msg)
         {
-            ZaupShop.Instance.Buy(UnturnedPlayer.FromCSteamID(new CSteamID(ulong.Parse(playerid.Id))), msg);
+            ZaupShop.Instance.Buy((UnturnedPlayer)playerid, msg);
         }
     }
 }

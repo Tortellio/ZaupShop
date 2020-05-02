@@ -4,13 +4,13 @@ using Rocket.Unturned.Player;
 
 namespace ZaupShop
 {
-    public class CommandCost : IRocketCommand
+    public class CommandLimit : IRocketCommand
     {
-        public AllowedCaller AllowedCaller => AllowedCaller.Player;
+        public AllowedCaller AllowedCaller => AllowedCaller.Both;
 
-        public string Name => "cost";
+        public string Name => "limit";
 
-        public string Help => "Tells you the cost of a selected item.";
+        public string Help => "Tells you the limit of a selected item.";
 
         public string Syntax => "[v.]<name or id>";
 
@@ -20,7 +20,7 @@ namespace ZaupShop
 
         public void Execute(IRocketPlayer playerid, string[] msg)
         {
-            ZaupShop.Instance.Cost((UnturnedPlayer) playerid, msg);
+            ZaupShop.Instance.Limit((UnturnedPlayer)playerid, msg);
         }
     }
 }
