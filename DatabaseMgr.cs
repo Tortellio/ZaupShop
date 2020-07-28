@@ -64,6 +64,20 @@ namespace ZaupShop
                 Logger.LogException(exception, "MySQL Database configurations are invalid!");
             }
         }
+        public bool IsItemPriceExist(int itemId)
+        {
+            var scalar = ExecuteQuery(true,
+                $"SELECT * FROM `{ZaupShop.Instance.Configuration.Instance.ItemShopTableName}` WHERE id = @id;",
+                new MySqlParameter("@id", itemId));
+            return scalar != null;
+        }
+        public bool IsVehiclePriceExist(int vehicleId)
+        {
+            var scalar = ExecuteQuery(true,
+                $"SELECT * FROM `{ZaupShop.Instance.Configuration.Instance.VehicleShopTableName}` WHERE id = @id;",
+                new MySqlParameter("@id", vehicleId));
+            return scalar != null;
+        }
         public bool AddItem(int id, string name, decimal cost, decimal buyback, int limit, bool change)
         {
             var affected = ExecuteQuery(false,

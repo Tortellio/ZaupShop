@@ -34,62 +34,59 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Assembly-CSharp">
-      <HintPath>..\..\Libraries\Unity\Assembly-CSharp.dll</HintPath>
-      <Private>False</Private>
+      <HintPath>..\..\..\Libraries\Mono\Assembly-CSharp.dll</HintPath>
     </Reference>
     <Reference Include="Assembly-CSharp-firstpass">
-      <HintPath>..\..\Libraries\Unity\Assembly-CSharp-firstpass.dll</HintPath>
-      <Private>False</Private>
+      <HintPath>..\..\..\Libraries\Mono\Assembly-CSharp-firstpass.dll</HintPath>
     </Reference>
     <Reference Include="BouncyCastle.Crypto">
-      <HintPath>..\..\Libraries\MySQL\BouncyCastle.Crypto.dll</HintPath>
-      <Private>False</Private>
+      <HintPath>..\..\..\Libraries\MySQL\BouncyCastle.Crypto.dll</HintPath>
     </Reference>
     <Reference Include="Google.Protobuf">
-      <HintPath>..\..\Libraries\MySQL\Google.Protobuf.dll</HintPath>
-      <Private>False</Private>
+      <HintPath>..\..\..\Libraries\MySQL\Google.Protobuf.dll</HintPath>
     </Reference>
-    <Reference Include="I18N">
-      <HintPath>..\..\Libraries\MySQL\I18N.dll</HintPath>
-      <Private>False</Private>
+    <Reference Include="I18N.v2">
+      <HintPath>..\..\..\Libraries\MySQL\I18N.v2.dll</HintPath>
     </Reference>
-    <Reference Include="I18N.West">
-      <HintPath>..\..\Libraries\MySQL\I18N.West.dll</HintPath>
-      <Private>False</Private>
+    <Reference Include="I18N.v2.West">
+      <HintPath>..\..\..\Libraries\MySQL\I18N.v2.West.dll</HintPath>
+    </Reference>
+    <Reference Include="K4os.Compression.LZ4">
+      <HintPath>..\..\..\Libraries\MySQL\K4os.Compression.LZ4.dll</HintPath>
     </Reference>
     <Reference Include="MySql.Data">
-      <HintPath>..\..\Libraries\MySQL\MySql.Data.dll</HintPath>
-      <Private>False</Private>
+      <HintPath>..\..\..\Libraries\MySQL\MySql.Data.dll</HintPath>
     </Reference>
     <Reference Include="Renci.SshNet">
-      <HintPath>..\..\Libraries\MySQL\Renci.SshNet.dll</HintPath>
-      <Private>False</Private>
+      <HintPath>..\..\..\Libraries\MySQL\Renci.SshNet.dll</HintPath>
     </Reference>
     <Reference Include="Rocket.API">
-      <HintPath>..\..\Libraries\Rocket\Rocket.API.dll</HintPath>
+      <HintPath>..\..\..\Libraries\Rocket.API.dll</HintPath>
     </Reference>
     <Reference Include="Rocket.Core">
-      <HintPath>..\..\Libraries\Rocket\Rocket.Core.dll</HintPath>
+      <HintPath>..\..\..\Libraries\Rocket.Core.dll</HintPath>
     </Reference>
     <Reference Include="Rocket.Unturned">
-      <HintPath>..\..\Libraries\Rocket\Rocket.Unturned.dll</HintPath>
+      <HintPath>..\..\..\Libraries\Rocket.Unturned.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Management" />
     <Reference Include="System.Transactions" />
-    <Reference Include="Uconomy, Version=1.0.4.1, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\Libraries\Plugins\aLP2\Uconomy.dll</HintPath>
-      <Private>False</Private>
+    <Reference Include="Ubiety.Dns.Core">
+      <HintPath>..\..\..\Libraries\MySQL\Ubiety.Dns.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Uconomy">
+      <HintPath>..\..\..\Libraries\Uconomy.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine">
-      <HintPath>..\..\Libraries\Unity\UnityEngine.dll</HintPath>
-      <Private>False</Private>
+      <HintPath>..\..\..\Libraries\Mono\UnityEngine.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.CoreModule">
-      <HintPath>..\..\Libraries\Unity\UnityEngine.CoreModule.dll</HintPath>
-      <Private>False</Private>
+      <HintPath>..\..\..\Libraries\Mono\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Zstandard.Net">
+      <HintPath>..\..\..\Libraries\MySQL\Zstandard.Net.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
